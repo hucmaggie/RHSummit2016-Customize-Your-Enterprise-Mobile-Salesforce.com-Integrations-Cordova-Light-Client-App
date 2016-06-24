@@ -19,11 +19,7 @@ document.getElementById('opportunityBtn').onclick = function () {
             var cell6 = row.insertCell(5);
 
             if(opportunities[i].StageName === 'Closed Won')
-            {
-              //alert('here');
-              //cell1.innerHTML = "<input id='radioButton" + i +"' disabled type='radio' onclick='myFunction(" + "radioButton" + i  + ")'/>";
               cell1.innerHTML = "<input id='radioButton' disabled type='radio'/>";  
-            }
             else
               cell1.innerHTML = "<input id='radioButton1' type='radio' onclick='myFunction(&quot;" + opportunities[i].Id + "&quot;)'/>";  
             cell2.innerHTML = opportunities[i].Name;

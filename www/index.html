@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-  <head>
+<head>
     <meta charset="utf-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -7,42 +7,80 @@
     <title>Red Hat Summit 2016 - Customized Your Enterprise Mobile Salesforce.com Integrations</title>
 
     <link rel="stylesheet" href="css/app.css">
-  </head>
+</head>
 
-  <body>
-  <header class="header-footer-bg">
-      <div class="center">
-          <IMG SRC="img/rhsummit-logo.png" ALT="Red Hat Summit Logo">
-          <h3>Customize Your Enterprise Mobile Salesforce.com Integrations<br/>
-              <small>Opportunities List & Update</small>
-          </h3>
-      </div>
-  </header>
+<body>
+<header class="header-footer-bg">
+    <div class="center">
+        <IMG SRC="img/rhsummit-logo.png" ALT="Red Hat Summit Logo">
+        <h3>Customize Your Enterprise Mobile Salesforce.com Integrations<br/>
+            <small>Opportunities List & Update</small>
+        </h3>
+    </div>
+</header>
 
-  <div id="count" class="">
-      <div id="formWrapper">
-          <p id="description">This app will retrieve a list of your Opportunities from <b><font color="#009CDB">Salesforce.com</font></b> via <b><font color="red">Red Hat JBoss Fuse</font></b>, and allow you to update the status(es) accordingly. Fuse will then create a customer record in SAP using the Account data associated with updated Opportunity in Salesforce.com.</p>
-          <p>
-          <button id="opportunityBtn" type="button" class="say-hello-button">List my SFDC Opportunities!</button>
-          <div id="cloudResponse" class="cloudResponse"></div>
-          <table id="opportunities">
+<div id="count" class="">
+    <div id="formWrapper">
+        <p id="description">This app will retrieve a list of your Opportunities from <b><font color="#009CDB">Salesforce.com</font></b> via <b><font color="red">Red Hat JBoss Fuse</font></b>, and allow you to update the status(es) accordingly. Fuse will then create a customer record in SAP using the Account data associated with updated Opportunity in Salesforce.com.</p>
+        <p>
+            <button id="say_hello" type="button" class="say-hello-button">List my SFDC Opportunities!</button>
+        <div id="cloudResponse" class="cloudResponse"></div>
+
+        <table id="fuseList">
             <thead>
-              <tr>
-                <th>Close Oppty</th>
+            <tr>
+                <th>Update?</th>
                 <th>Oppty Name</th>
                 <th>Acct Name</th>
                 <th>Amount</th>
                 <th>Stage</th>
                 <th>Oppty Id</th>
-              </tr>
+            </tr>
             </thead>
             <tbody>
             </tbody>
-          </table>
-      </div>
-  </div>
+            <!--
+            <tr>
+                <td><input type="radio" name="update" value="00628000008yFw2AAE"></td>
+                <td>Fuse Test</td>
+                <td>Fuse Integration Account</td>
+                <td>2,000.00</td>
+                <td>
+                    <select>
+                        <options value="Closed" selected>Closed Won</options>
+                        <options value="Perception">Perception Analysis</options>
+                    </select>
+                </td>
+                <td>00628000008yFw2AAE</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="update" value="00628000008yT2TAAU"></td>
+                <td>TestOne</td>
+                <td>Fuse Integration Account</td>
+                <td>2,500.00</td>
+                <td>
+                    <select>
+                        <options value="Closed">Closed Won</options>
+                        <options value="Perception" selected>Perception Analysis</options>
+                    </select>
+                </td>
+                <td>00628000008yT2TAAU</td>
+            </tr>
+            </tr>-->
+        </table>
+    </div>
+</div>
 
-    <script src="feedhenry.js"></script>
-    <script src="hello.js"></script>
-  </body>
+<footer class="header-footer-bg">
+    <div>
+        <small class="right">
+            <!-- v.&nbsp;{{ version }} -->
+        </small>
+    </div>
+</footer>
+
+<script src="feedhenry.js"></script>
+<!-- <script src="hello.js"></script> -->
+<script src="sfdcListUpdate.js"></script>
+</body>
 </html>
