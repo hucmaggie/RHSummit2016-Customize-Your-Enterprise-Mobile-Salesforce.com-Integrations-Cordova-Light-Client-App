@@ -23,52 +23,24 @@
       <div id="formWrapper">
           <p id="description">This app will retrieve a list of your Opportunities from <b><font color="#009CDB">Salesforce.com</font></b> via <b><font color="red">Red Hat JBoss Fuse</font></b>, and allow you to update the status(es) accordingly. Fuse will then create a customer record in SAP using the Account data associated with updated Opportunity in Salesforce.com.</p>
           <p>
-          <button id="say_hello" type="button" class="say-hello-button">List my SFDC Opportunities!</button>
+          <button id="opportunityBtn" type="button" class="say-hello-button">List my SFDC Opportunities!</button>
           <div id="cloudResponse" class="cloudResponse"></div>
           <table id="opportunities">
-            <tr>
-              <th>Oppty Name</th>
-              <th>Acct Name</th>
-              <th>Amount</th>
-              <th>Stage</th>
-              <th>Oppty Id</th>
-            </tr>
-            <tr>
-              <td>Fuse Test</td>
-              <td>Fuse Integration Account</td>
-              <td>2,000.00</td>
-              <td>
-                <select>
-                  <options value="Closed" selected>Closed Won</options>
-                  <options value="Perception">Perception Analysis</options>
-                </select>
-              </td>
-              <td>00628000008yFw2AAE</td>
-            </tr>
-            <tr>
-              <td>TestOne</td>
-              <td>Fuse Integration Account</td>
-              <td>2,500.00</td>
-              <td>
-                <select>
-                  <options value="Closed">Closed Won</options>
-                  <options value="Perception" selected>Perception Analysis</options>
-                </select>
-              </td>
-              <td>00628000008yT2TAAU</td>
-            </tr>
-            </tr>
+            <thead>
+              <tr>
+                <th>Close Oppty</th>
+                <th>Oppty Name</th>
+                <th>Acct Name</th>
+                <th>Amount</th>
+                <th>Stage</th>
+                <th>Oppty Id</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
           </table>
       </div>
   </div>
-
-      <footer class="header-footer-bg">
-          <div>
-              <small class="right">
-                  <!-- v.&nbsp;{{ version }} -->
-              </small>
-          </div>
-      </footer>
 
     <script src="feedhenry.js"></script>
     <script src="hello.js"></script>
