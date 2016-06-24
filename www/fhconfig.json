@@ -1,7 +1,8 @@
 {
   "appid": "fx46repjmlps7ctluplxxhfe",
   "appkey": "8f992fb7bc2ade89f6ef969e5efab259a49e6a67",
-  "connectiontag": "0.0.1",
+  "apptitle": "RHSummit List Update SFDC Oppty Cordova Light App",
+  "connectiontag": "0.0.12",
   "host": "https://mhu.us.demos.redhatmobile.com",
   "projectid": "fx46repibijmcos4kxejg227"
 }
