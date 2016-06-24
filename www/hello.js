@@ -2,7 +2,7 @@ document.getElementById('opportunityBtn').onclick = function () {
   document.getElementById('cloudResponse').innerHTML = "<p>Calling Salesforce.....</p>";
   $fh.cloud(
       { 
-        path: 'fuseList',
+        path: 'fuseListLocal',
         method : 'GET'
       },
       function (fuseList) {
@@ -40,7 +40,7 @@ function myFunction(optId) {
     document.getElementById('cloudResponse').innerHTML = "<p>Calling SAP.....</p>";
     $fh.cloud(
       {
-        path: 'fuseUpdate',
+        path: 'fuseUpdateLocal',
         method : 'GET',
         data: {
           optId: optId
