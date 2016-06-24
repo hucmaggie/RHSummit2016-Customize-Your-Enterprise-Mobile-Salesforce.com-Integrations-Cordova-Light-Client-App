@@ -1,7 +1,7 @@
 document.getElementById('opportunityBtn').onclick = function () {
   document.getElementById('cloudResponse').innerHTML = "<p>Calling Salesforce.....</p>";
   $fh.cloud(
-      {
+      { 
         path: 'fuseListLocal',
         method : 'GET'
       },
