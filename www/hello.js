@@ -37,7 +37,7 @@ document.getElementById('opportunityBtn').onclick = function () {
 };
 
 function myFunction(optId) {
-    document.getElementById('cloudResponse').innerHTML = "<p>Calling SAP.....</p>";
+    document.getElementById('cloudResponse').innerHTML = "<p>Calling SFDC & SAP.....</p>";
     $fh.cloud(
       {
         path: 'fuseUpdate',
