@@ -13,17 +13,17 @@ document.getElementById('opportunityBtn').onclick = function () {
             var row = table.insertRow(i+1);
             var cell1 = row.insertCell(0);
             var cell2 = row.insertCell(1);
-            var cell3 = row.insertCell(2);
-            var cell4 = row.insertCell(3);
-            var cell5 = row.insertCell(4);
-            var cell6 = row.insertCell(5);
+            // var cell3 = row.insertCell(2);
+            var cell4 = row.insertCell(2);
+            var cell5 = row.insertCell(3);
+            var cell6 = row.insertCell(4);
 
             if(opportunities[i].StageName === 'Closed Won')
               cell1.innerHTML = "<input id='radioButton' disabled type='radio'/>";  
             else
               cell1.innerHTML = "<input id='radioButton1' type='radio' onclick='myFunction(&quot;" + opportunities[i].Id + "&quot;)'/>";  
             cell2.innerHTML = opportunities[i].Name;
-            cell3.innerHTML = opportunities[i].AccountId;
+            // cell3.innerHTML = opportunities[i].AccountId;
             cell4.innerHTML = opportunities[i].Amount;
             cell5.innerHTML = opportunities[i].StageName;
             cell6.innerHTML = opportunities[i].Id;
